@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS CSS Popup modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="page">
+    <div class="button large popup-btn" data-target="#popup-first">first popup</div>
+    <div class="button large popup-btn" data-target="#popup-second">second popup</div>
+</section>
+
+<div class="popup" id="popup-first">
+    <div class="popup-overlay popup-button" data-target="#popup-main"></div>
+    <div class="popup-inner">
+        <h2>popup title</h2>
+        <h3>popup subtitle</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere corporis fugiat possimus eligendi quasi ducimus, nisi delectus nihil dicta eum illo omnis vitae repudiandae alias commodi mollitia molestias maiores earum.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum voluptatum nihil ipsam impedit? Omnis, beatae. Illum a est ipsum blanditiis.
+        </p>
+        <button class="button popup-btn" data-target="#popup-first">
+            close
+        </button>
+    </div>
+</div>
+
+<div class="popup" id="popup-second">
+    <div class="popup-overlay popup-button" data-target="#popup-main"></div>
+    <div class="popup-inner">
+        <h2>popup second title</h2>
+        <h3>popup second subtitle</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere corporis fugiat possimus eligendi quasi ducimus, nisi delectus nihil dicta eum illo omnis vitae repudiandae alias commodi mollitia molestias maiores earum.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum voluptatum nihil ipsam impedit? Omnis, beatae. Illum a est ipsum blanditiis.
+        </p>
+        <button class="button popup-btn" data-target="#popup-second">
+            close
+        </button>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
